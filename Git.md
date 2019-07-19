@@ -62,6 +62,7 @@
 + 回滚到对应commit所有修改消失
     >git reset --hard [commit]
 
+
 ## 查看历史提交修改
 + 当前分支的提交记录
     >git log
@@ -102,3 +103,16 @@
 ## patch管理
 
 
+##Git与GitHub
+
+>echo "# repository name" >> README.md
+
+>git init
+
+>git add README.md
+
+>git commit -m "first commit"
+
+>git remote add origin [github repository url]
+
+>git push -u origin master
