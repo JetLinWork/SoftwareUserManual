@@ -6,7 +6,7 @@
 >Git完整命令手册地址: http://git-scm.com/docs 
 
 
-## 查看版本
+## 查看
 >git version
 
 ## config设置
@@ -31,4 +31,35 @@
     >git clone [url]
 
 
-##
+## 修改管理
+
+
+
+## 修改同步
+
+
+## branch分支管理
++ 查看分支
+    >git branch
++ 创建分支
+    >git branch [branch-name]
++ 切换到对应分支
+    >git checkout [branch-name]
++ 删除分支
+    >git branch -d [branch-name]
++ 合并分支修改(将branch-name中的修改合并到当前分支)
+    >git merge [branch-name]
+
+## tag标签管理
++ 查看标签
+    >git tag
++ 创建标签(默认创建当前branch的最近commit)
+    >git tag [tag-name]
++ 创建历史commit的标签(给指定的commit打标签)
+    >git tag [tag-name] [commit-number]
++ 删除标签
+    >git tag -d [tag-name]
+
+## patch管理
+
+
