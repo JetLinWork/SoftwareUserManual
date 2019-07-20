@@ -100,10 +100,10 @@
 
 
 
-## patch管理
+## Patch管理
 
 
-##Git与GitHub
+## Git与GitHub
 
 >echo "# repository name" >> README.md
 
