@@ -1,4 +1,4 @@
-## Git
+## Git和GitHub使用
 
 ## 安装
 >Git官方网站: https://git-scm.com/
@@ -20,7 +20,7 @@
 
         >git config --global https.proxy https://127.0.0.1:1080
     + 取消代理
-        >   git config --global --unset http.proxy
+        >git config --global --unset http.proxy
 
         >git config --global --unset https.proxy
 
@@ -32,10 +32,46 @@
 
 
 ## 修改管理
-
++ 查看修改
+    >git status
++ 比对还未暂存的(未add)
+    >git diff
++ 将修改提交到暂存区
+    >git add [file]
++ 比对暂存区与修改前区别
+    >git diff --staged
++ 从暂存区删去文件修改
+    >git reset [file]
++ commit提交
+    >git commit -m "[descriptive message]"
 
 
 ## 修改同步
++ 获取远程代码
+    >git fetch [bookmark]
++ 将branch合入到当前分支
+    >git merge [bookmark]/[branch]
++ 推送本地commit到远程
+    >git push [alias] [branch]
++ 删除git pull相当于git fetch和git merge组合
+    >git pull
+
+## 回滚commit
++ 回滚到对应commit但修改不消失
+    >git reset [commit]
++ 回滚到对应commit所有修改消失
+    >git reset --hard [commit]
+
+
+## 查看历史提交修改
++ 当前分支的提交记录
+    >git log
++ 某个文件的修改提交记录
+    >git log --follow [file]
++ 查看两个分支的代码区别
+    >git diff [first-branch]...[second-branch]
++ 查看某个commit号的修改
+    >git show [commit]
 
 
 ## branch分支管理
@@ -60,6 +96,20 @@
 + 删除标签
     >git tag -d [tag-name]
 
-## patch管理
+
+## Patch管理
 
 
+## Git与GitHub
+
+>echo "# repository name" >> README.md
+
+>git init
+
+>git add README.md
+
+>git commit -m "first commit"
+
+>git remote add origin [github repository url]
+
+>git push -u origin master
